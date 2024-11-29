@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-07</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // function colorChange() {
+        //     var h1 = document.getElementById('heading');
+        //     h1.style.color = "red";
+        // }
+
+    </script>
+</head>
+
+<body id="body">
+
+    <h1 id="heading" onmouseover="colorChange()">CodingOtt</h1>
+
+    <!-- <button onclick="colorChange('green', 'yellow')">Green</button>
+    <button onclick="colorChange('red', 'black')">Red</button>
+    <button onclick="colorChange('blue', 'red')">Blue</button>
+    <button onclick="colorChange('pink', 'blue')">Pink</button> -->
+
+    <button onclick="colorChange('red', 'black')">Red</button>
+    <button onmouseout="colorChange('green', 'red')">Green</button>
+    <button oncontextmenu="colorChange('brown', 'orange')">Brown</button>
+    <button ondblclick="colorChange('blue' , 'yellow')">Blue</button>
+    <button
+      onmousedown="colorChange('orange' , 'green')"
+      onmouseup="colorChange('inherit', 'inherit')"
+    >
+      Orange
+    </button>
+    <button
+      onmouseover="colorChange('deeppink', 'cyan')"
+      onmouseout="colorChange('inherit', 'inherit')"
+    >
+      Deeppink
+    </button>
+
+    <script src="./script/app.js"></script>
+</body>
+
+</html>
