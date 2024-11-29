@@ -1,0 +1,8 @@
+@keyframes demo{
+    0% {background-color: #f4a0a0;}
+    20% {background-color: #6ce095;}
+    40% {background-color: #4684cc;}
+    60% {background-color: #842544;}
+    80% {background-color: #ea55ed;}
+    100% {background-color: #054268;}
+}
