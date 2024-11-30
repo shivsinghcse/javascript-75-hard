@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-08</title>
+</head>
+
+<body>
+    <h1 id="title">CodingOtt</h1>
+    <!-- <button onclick="size()" id="btn-1">Small</button>
+    <button onclick="size()" id="btn-2">Medium</button>
+    <button onclick="size()" id="btn-3">Large</button> -->
+
+    <!-- <button onclick="size('btn-1')" id="btn-1">Small</button>
+    <button onclick="size('btn-2')" id="btn-2">Medium</button>
+    <button onclick="size('btn-3')" id="btn-3">Large</button> -->
+
+    <!-- <button onclick="size('btn-1', 'deeppink')" id="btn-1">Small</button>
+    <button onclick="size('btn-2', 'lightblue')" id="btn-2">Medium</button>
+    <button onclick="size('btn-3')" id="btn-3">Large</button> -->
+
+    <button onclick="size(this, 'red','#fff', '40px', '100px' )">Small</button>
+    <button onclick="size(this, 'green', '#fff', '60px', '120px')">Medium</button>
+    <button onclick="size(this, 'yellow', '#000', '80px', '140px')">Large</button>
+
+    <br>
+    <br>
+    <br>
+
+    <button onclick="changeText()">Chang Text</button>
+    <br>
+    <br>
+    <br>
+    <input type="color" name="color" id="color" onchange="changeBg(this)">
+    <script src="app.js"></script>
+</body>
+
+</html>
