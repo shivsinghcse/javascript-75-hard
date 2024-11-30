@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-09</title>
+    <style>
+        #username-view{
+            color: red;;
+        }
+
+        #password-view{
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">CodingOtt</h1>
+    <!-- <p id="branch">Powered By Wap Institute</p>
+    <p id="founder">Founder Er Saurav</p>
+    <input type="color" name="color" id="color-picker" onchange="changeBg('founder')"> -->
+    
+    <form onsubmit="login(event)">
+        <input type="text" name="username" placeholder="@username" id="username">
+        <br>
+        <br>
+        <input type="password" name="password" id="password" placeholder="********">
+        <br>
+        <br>
+        <button>Login</button>
+    </form>
+    <h1 id="username-view"></h1>
+    <h1 id="password-view"></h1>
+    <script src="app.js"></script>
+</body>
+
+</html>
