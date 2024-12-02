@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style/index.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="card" class="animate__animated animate__fadeIn animate__slower">
+            <h1>Register Now</h1>
+            <form id="signup" onsubmit="signup(event)" name="register">
+                <input type="text" name="firstName"  placeholder="Firstname" required>
+                <input type="text" name="lastName"  placeholder="Lastname" required>
+                <input type="email" name="email"  placeholder="example@gmail.com" required>
+                <input type="password" name="password"  placeholder="********" required>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
