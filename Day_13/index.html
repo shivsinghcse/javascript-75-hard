@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-13</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/index.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="card" class="animate__animated animate__fadeIn animate__slower">
+            <h1>Register Now</h1>
+            <form id="signup" onsubmit="signup(event)" name="register">
+                <input type="text" name="firstName"  placeholder="Firstname" required>
+                <input type="text" name="lastName"  placeholder="Lastname" required>
+                <input type="email" name="email"  placeholder="example@gmail.com" required>
+                <input type="password" name="password"  placeholder="********" required>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div id="card" class="animate__animated animate__fadeIn animate__slower">
+            <h1>Login Now</h1>
+            <form id="signin" name="signin" onsubmit="login(event)">
+                <input type="email" name="email"  placeholder="example@gmail.com" required>
+                <input type="password" name="password"  placeholder="********" required>
+                <button>Submit</button>
+            </form>
+        </div>
+
+     
+    </div>
+
+    <div id="modal">
+        <div id="modal-body">
+            <button id="close-btn" onclick="hideModal()">
+                <i class="fa fa-times-circle close-icon"></i>
+            </button>
+            <i class="fa fa-check check-icon"></i>
+            <h1>Register Success!</h1>
+            <button id="ok-btn" onclick="hideModal()">Ok</button>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

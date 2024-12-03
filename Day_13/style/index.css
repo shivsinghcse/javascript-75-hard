@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 75%;
+    height: 80vh;
+    margin: 10vh auto;
+    /* background: #ddd; */
+    border-radius: 5vh;
+    box-shadow: 0 0 5vh #ddd;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+#card {
+    width: 30%;
+    padding: 2em;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #ddd;
+}
+#card h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 18px;
+    color: dodgerblue;
+}
+#signup, #signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+#signup input, #signin input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #323232;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* margin-bottom: 1.5rem; */
+}
+
+#signup button {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: dodgerblue;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* #signup button:hover{
+   font-size: 20px;
+} */
+
+#modal {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-body {
+    width: 35%;
+    height: 40%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#modal-body .check-icon {
+    background: green;
+    color: #fff;
+    font-size: 36px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none; 
+    border-radius: 50%;
+   
+}
+
+#modal-body .close-icon {
+    font-size: 28px;
+    color: #000;
+    cursor: pointer;
+}
+
+#modal-body h1 {
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+#modal-body #ok-btn {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 700;
+    background: #fff;
+    padding: 12px 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bcb9b9;
+    border-style: none;
+}
+
+#modal-body #ok-btn:hover {
+    background: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+    /* box-shadow: none; */
+}
