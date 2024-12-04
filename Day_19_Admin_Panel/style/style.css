@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: #ddd;
+}
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #e1acac;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.section {
+    width: calc(100% - 15%);
+    height: 100vh;
+    background-color: #ffffff;
+    margin-left: 15%;
+}
+
+.section .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 15%);
+    margin-left: 15%;
+
+    background-color: dodgerblue;
+    background-image: linear-gradient(
+        to right,
+        #ff8177 0%,
+        #ff867a 0%,
+        #ff8c7f 21%,
+        #f99185 52%,
+        #cf556c 78%,
+        #b12a5b 100%
+    );
+    padding: 24px 25px;
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#brand-name {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+.section .topnav button {
+    padding-top: 4px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+.section .topnav button:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidenav {
+        width: 0;
+    }
+    .section,
+    .section .topnav {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section .topnav button{
+        display: block;
+    }
+}
