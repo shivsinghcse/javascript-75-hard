@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css"
+        integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidenav" id="sidenav">
+            <div id="sidenav-menu">
+                <button id="register-btn"
+                    onclick="tab('register-btn', 'signin-btn','register', 'signin')">Register</button>
+                <button id="signin-btn" onclick="tab('signin-btn','register-btn','signin', 'register')">Signin</button>
+            </div>
+        </div>
+        <div class="section" id="section">
+            <div class="topnav" id="topnav">
+                <div id="toolbar">
+                    <button onclick="toggle()"><i class="fa fa-bars"></i></button>
+                    <h1 id="brand-name">JustCoder</h1>
+                </div>
+            </div>
+            <div id="content">
+                <div id="register" class="animate__animated animate__zoomIn">
+                    <h1>Register</h1>
+                    <div class="card">
+                        <form id="register-form" name="signupForm" onsubmit="signup(event)">
+
+                            <input type="text" name="firstname" id="firstname" placeholder="Jhon"
+                                oninput="onInputValidation(this, 'firstname-msg')" />
+
+                            <p id="firstname-msg"></p>
+                            <input type="text" name="lastname" id="lastname" placeholder="Doe"
+                                oninput="onInputValidation(this, 'lastname-msg')">
+                            <p id="lastname-msg"></p>
+                            <input type="email" name="email" id="email" placeholder="abc@gmail.com"
+                                oninput="onInputValidation(this, 'email-msg')">
+                            <p id="email-msg"></p>
+                            <div id="password-container">
+                                <input type="password" name="password" id="password" placeholder="********"
+                                    oninput="onInputValidation(this, 'password-msg')">
+                                <button class="password-btn" type="button"
+                                    onclick="togglePassword('eye-btn', 'password')">
+                                    <i class="fa fa-eye" id="eye-btn"></i>
+                                </button>
+
+                            </div>
+                            <p id="password-msg"></p>
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div id="signin" class="animate__animated animate__fadeInLeftBig">
+                    <h1>Signin</h1>
+                    <div class="card">
+                        <form id="signin-form" name="loginForm" onsubmit="signin(event)">
+                            <input type="email" name="email" id="email" placeholder="Email"
+                                oninput="onInputValidation(this, 'signin-email-msg')">
+                            <p id="signin-email-msg"></p>
+                            <div id="signin-password-container">
+                                <input type="password" name="password" id="signin-password" placeholder="Password"
+                                    oninput="onInputValidation(this, 'signin-password-msg')">
+                                <button class="password-btn" type="button"
+                                    onclick="togglePassword('signin-eye-btn', 'signin-password')">
+                                    <i class="fa fa-eye" id="signin-eye-btn"></i>
+                                </button>
+                            </div>
+                            <p id="signin-password-msg"></p>
+                            <button type="submit">Signin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
