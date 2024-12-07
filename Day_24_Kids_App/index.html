@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-24</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css"
+        integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="title-box">
+        <i class="fa fa-volume-up" id="speaker"></i>
+        <h1 id="title">
+            <font color="#AA3800">K</font>ids
+            <font color="#1BA6D0">A</font>pp
+        </h1>
+    </div>
+    <div id="container">
+
+        <div>
+            <img src="./assets/images/kids.png" alt="kids">
+        </div>
+
+        <div id="app-btn">
+            <button onclick="speak('a')">A</button>
+            <button onclick="speak('b')">B</button>
+            <button onclick="speak('c')">C</button>
+            <button onclick="speak('d')">D</button>
+            <button onclick="speak('e')">E</button>
+        </div>
+    </div>
+    <audio id="audio"></audio>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>
