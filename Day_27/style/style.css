@@ -1,0 +1,22 @@
+/* body{
+    background-color: aqua;
+} */
+
+h1{
+    font-family: sans-serif;
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 24px;
+    font-size: 18px;
+
+}
+p{
+    background-color: #fce8e8;
+    font-size: 20px;
+    padding: 8px 24px;
+    font-weight: bold;
+}
