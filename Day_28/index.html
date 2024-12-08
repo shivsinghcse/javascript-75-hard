@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 28</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <!-- <div id="root"></div>
+    <button onclick="create()">Create</button> -->
+
+    <div id="container">
+        <div id="sidenav">
+            <h1>Element Generator</h1>
+            <form onsubmit="create()" name="element-form">
+                <select name="elName" id="element">
+                    <option value="">Choose your tag</option>
+                    <option value="h1">h1</option>
+                    <option value="div">div</option>
+                    <option value="p">p</option>
+                    <option value="mark">mark</option>
+                    <option value="marquee">marquee</option>
+                    <option value="button">Button</option>
+                </select>
+                <input type="text" id="elText" name="elText" placeholder="enter your Content" required="true" />
+                <button>Create</button>
+            </form>
+        </div>
+        <div id="section"></div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    /* background-color: red; */
+}
+
+#sidenav{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#sidenav h1 {
+    color: #fff;
+    margin-top: 32px;
+    font-size: 42px;
+}
+
+#sidenav form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+#sidenav input, select, button{
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#section{
+    width: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 100vh;
+    padding: 22px;
+}
